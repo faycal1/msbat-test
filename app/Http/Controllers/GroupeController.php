@@ -16,7 +16,7 @@ class GroupeController extends Controller
      */
     public function index()
     {
-        return Groupe::get()->tojson();
+        return Groupe::with('users')->get()->tojson();
     }
 
 

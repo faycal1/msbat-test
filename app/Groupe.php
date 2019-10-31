@@ -8,7 +8,7 @@ class Groupe extends Model
 {
     protected $fillable = ['name'];
 
-    public function groupes()
+    public function users()
     {
         return $this->belongsToMany(User::class);
     }
