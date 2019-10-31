@@ -27,7 +27,7 @@ class UserStoreRequest extends FormRequest
             'name' => 'required',
             'first_name' => 'required',
             'email' => 'required|unique:users',
-            // 'groupe_id'=>'required',
+            'groupe_id'=>'required',
         ];
     }
 }

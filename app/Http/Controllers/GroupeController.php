@@ -66,6 +66,7 @@ class GroupeController extends Controller
 
             $groupe->update($request->all());
 
+
             return  response()->json(['status' => true, 'message' => 'Edition effectuée avec succées']);
         } catch (\Exception $e) {
             return  response()->json(['status' => false, 'message' => $e->getMessage()]);
