@@ -49,7 +49,7 @@ class GroupeController extends Controller
      */
     public function show( Groupe $groupe)
     {
-       return response()->json( $groupe) ;
+       return response()->json($groupe) ;
     }
 
 
