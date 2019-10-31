@@ -49,6 +49,19 @@
             name: 'example',
             first_name: 'example',
             email:'example@example.com',
+
+
+### Check si un user est actif  Method [GET]
+
+## URL  [api/users/{user_id}/actif]
+
+ Request (application/json)
+
+    + Headers
+
+            Accept:        application/json
+            
+    
             
             
 ### Recupere la liste des Groupe Method [GET]

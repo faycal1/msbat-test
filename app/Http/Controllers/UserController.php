@@ -74,4 +74,10 @@ class UserController extends Controller
             return  response()->json(['status' => false, 'message' => $e->getMessage()]);
         }
     }
+
+    public function isActif(User $user)
+    {
+        $resuls = $user->actif ? true : false;
+        return response()->json(['actif' => $resuls]);
+    }
 }

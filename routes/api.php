@@ -23,3 +23,5 @@ Route::apiResources([
     'groupes' => 'GroupeController'
 ]);
 
+Route::get('/user/{user}/actif' , 'UserController@isActif');
+
